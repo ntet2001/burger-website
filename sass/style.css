@@ -1,0 +1,43 @@
+@font-face {
+  font-family: 'Raleway-Regular';
+  src: url("../src/library/Raleway-Regular.ttf");
+}
+
+* {
+  margin: 0px;
+  padding: 0px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  background-image: url("../src/images/background.jpg");
+}
+
+button {
+  color: #ffff;
+  padding: 10px 20px;
+  font-size: 15px;
+  font-family: 'Raleway-Regular';
+  background-color: transparent;
+  text-align: center;
+  border: 1px solid #ffff;
+  border-radius: 2px;
+  -webkit-transition: 0.3s ease-in;
+  transition: 0.3s ease-in;
+}
+
+button:hover {
+  color: #0000;
+  background-color: #ffff;
+}
+
+h1, p, h3, span {
+  font-family: 'Raleway-Regular';
+  color: #ffff;
+}
+
+p {
+  font-size: 15px;
+}
+/*# sourceMappingURL=style.css.map */

@@ -1,5 +1,46 @@
-body{
+@import "../src/library/Raleway-Regular.ttf";
+@import "./variables.scss";
+@font-face {
+    font-family: 'Raleway-Regular';
+    src: url('../src/library/Raleway-Regular.ttf');
+}
+
+*{
     margin: 0px;
     padding: 0px;
     box-sizing: border-box;
+}
+
+body{
+    background-image: url("../src/images/background.jpg");
+}
+
+button{
+    color: $white;
+    padding: 10px 20px;
+    font-size: 15px;
+    font-family: 'Raleway-Regular';
+    background-color: transparent;
+    text-align: center;
+    border: 1px solid $white;
+    border-radius: 2px;
+    transition:  0.3s ease-in;
+    &:hover{
+        color: $black;
+        background-color: $white;
+    }
+}
+
+h1{
+    font-family: 'Raleway-Regular';
+    color: $white;
+}
+
+p{
+    @extend h1; 
+    font-size: 15px; 
+}
+
+h3,span{
+    @extend h1;
 }
