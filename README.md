@@ -1,1 +1,1 @@
-THIS PROJECT IS A WEBSITE FOR A BURGER RESTO
+======= Burger website from scratch ======
