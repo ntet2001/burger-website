@@ -3,6 +3,7 @@
   src: url("../src/library/Raleway-Regular.ttf");
 }
 
+/*------- Style on iterating elements --------*/
 * {
   margin: 0px;
   padding: 0px;
@@ -12,6 +13,30 @@
 
 body {
   background-image: url("../src/images/background.jpg");
+}
+
+h1, p, h3, span {
+  font-family: 'Raleway-Regular';
+  color: #ffff;
+}
+
+p {
+  font-size: 15px;
+}
+
+a {
+  text-decoration: none;
+  color: #ffff;
+  font-size: 15px;
+  padding: 10px;
+  font-family: 'Raleway-Regular';
+  -webkit-transition: 0.3s ease-in;
+  transition: 0.3s ease-in;
+}
+
+li {
+  list-style: none;
+  margin: 0px 10px;
 }
 
 button {
@@ -28,16 +53,133 @@ button {
 }
 
 button:hover {
-  color: #0000;
   background-color: #ffff;
+  color: black;
 }
 
-h1, p, h3, span {
-  font-family: 'Raleway-Regular';
-  color: #ffff;
+/*-------- style on my navigation bar menu --------- */
+header {
+  position: fixed;
+  width: 100%;
+  z-index: 2;
 }
 
-p {
-  font-size: 15px;
+nav {
+  background-color: black;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  padding: 15px;
+  width: auto;
+}
+
+nav ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+nav ul li a:hover {
+  color: #ffa339;
+}
+
+nav .search, nav .cart {
+  cursor: pointer;
+}
+
+/*------- Style on the website banner -------*/
+.baner {
+  background-image: url("../src/images/home-bg.png");
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  width: auto;
+  position: relative;
+  top: 80px;
+  margin-bottom: 50px;
+  z-index: 1;
+}
+
+.baner .image {
+  width: auto;
+}
+
+.baner .image img {
+  width: 500px;
+}
+
+/*------Style on my div introduction ------*/
+.introduction {
+  text-align: center;
+  margin-bottom: 60px;
+}
+
+/*-------Style on my section services------*/
+#services {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  margin-bottom: 50px;
+}
+
+#services .service-card {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-align: center;
+}
+
+#services .service-card .service-img {
+  height: 50px;
+  width: 50px;
+  padding: 20px;
+  border-radius: 50%;
+  background-color: #ffa339;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+/*------Style on my section menu-------*/
+.menus {
+  text-align: center;
 }
 /*# sourceMappingURL=style.css.map */
