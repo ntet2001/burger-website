@@ -15,7 +15,7 @@ body {
   background-image: url("../src/images/background.jpg");
 }
 
-h1, p, h3, span {
+h1, p, h3, span, #about .about-text h2, #contact .form .form-fill h2 {
   font-family: 'Raleway-Regular';
   color: #ffff;
 }
@@ -179,7 +179,257 @@ nav .search, nav .cart {
 }
 
 /*------Style on my section menu-------*/
-.menus {
+.menus, .about-header, .reviews-header, .contact-header, .daily-posts-header {
   text-align: center;
+}
+
+#menus {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (minmax(350px, 1fr))[auto-fit];
+      grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+  -webkit-column-gap: 10px;
+          column-gap: 10px;
+  row-gap: 10px;
+  margin-bottom: 100px;
+}
+
+.menu .menu-image {
+  width: 100%;
+  height: auto;
+}
+
+.menu .menu-image img {
+  width: 100%;
+  height: auto;
+}
+
+.menu .menu-stars {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin-bottom: 5px;
+}
+
+.menu .menu-title {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+/*------Style on my section about -------*/
+#about {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  padding: 50px;
+}
+
+#about .about-img {
+  width: 500px;
+  height: 500px;
+}
+
+#about .about-img img {
+  width: 100%;
+  height: auto;
+}
+
+#about .about-text {
+  text-align: left;
+}
+
+#about .about-text h2 {
+  margin-bottom: 20px;
+}
+
+#about .about-text p {
+  margin-bottom: 20px;
+}
+
+#about .about-text .check {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 1fr 1fr;
+      grid-template-columns: 1fr 1fr 1fr;
+  margin-bottom: 20px;
+}
+
+#about .about-text .check .about-text-check {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+/*------Style on reviews------*/
+.reviews-header {
+  margin-bottom: 50px;
+}
+
+#reviews {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (minmax(100px, 1fr))[auto-fit];
+      grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+  -webkit-column-gap: 20px;
+          column-gap: 20px;
+  padding: 50px;
+}
+
+#reviews .review {
+  text-align: center;
+}
+
+#reviews .review .review-img {
+  margin-bottom: 10px;
+}
+
+#reviews .review .review-img img {
+  border-radius: 60%;
+}
+
+/*-------Style on contact section -------*/
+#contact {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (minmax(300px, 1fr))[auto-fit];
+      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  -webkit-column-gap: 50px;
+          column-gap: 50px;
+  padding: 50px;
+  margin-bottom: 50px;
+}
+
+#contact .form {
+  text-align: center;
+}
+
+#contact .form .adress {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (minmax(100px, 1fr))[auto-fit];
+      grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+  -webkit-column-gap: 20px;
+          column-gap: 20px;
+  margin-bottom: 20px;
+}
+
+#contact .form .adress .adress-card {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+#contact .form .form-fill h2 {
+  margin-bottom: 10px;
+}
+
+#contact .form .form-fill form input {
+  display: block;
+  width: 100%;
+  margin-bottom: 10px;
+  height: 35px;
+  border: #ffff solid 1px;
+  border-radius: 2px;
+  background-color: transparent;
+  font-family: 'Raleway-Regular';
+  font-size: 15px;
+  padding-left: 5px;
+  color: #ffff;
+}
+
+#contact .form .form-fill form input:focus-visible {
+  border: 1px solid #ffa339;
+}
+
+#contact .form .form-fill form textarea {
+  width: 100%;
+  margin-bottom: 5px;
+  border: #ffff solid 1px;
+  border-radius: 2px;
+  background-color: transparent;
+  font-family: 'Raleway-Regular';
+  font-size: 15px;
+  padding-left: 5px;
+  color: #ffff;
+}
+
+#contact .form .form-fill form textarea:focus-visible {
+  border: 1px solid #ffa339;
+}
+
+/*-------Style for Daily-posts section------*/
+.daily-posts-header {
+  margin-bottom: 50px;
+}
+
+#daily-posts {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (minmax(300px, 1fr))[auto-fit];
+      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  -webkit-column-gap: 50px;
+          column-gap: 50px;
+  margin-bottom: 50px;
+  padding: 50px;
+}
+
+#daily-posts .post {
+  text-align: center;
+}
+
+#daily-posts .post h3, #daily-posts .post p {
+  margin-bottom: 10px;
+}
+
+#daily-posts .post img {
+  width: 100%;
+  height: auto;
+  margin-bottom: 10px;
+}
+
+/*-------Style for the footer-------*/
+footer {
+  margin-bottom: 20px;
+}
+
+footer .footer-links {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin-bottom: 20px;
+}
+
+footer p {
+  text-align: center;
+}
+
+footer p .signature {
+  color: #ffa339;
 }
 /*# sourceMappingURL=style.css.map */
